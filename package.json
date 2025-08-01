@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc && xcopy src\\generated dist\\src\\generated /E /I /Y",
     "start": "node dist/src/server.js",
-    "vercel-build": "npx prisma generate --binary-target rhel-openssl-3.0.x && npx prisma migrate deploy",
-    "prisma:generate": "prisma generate"
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate deploy"
   },
   "keywords": [],
   "author": "",
