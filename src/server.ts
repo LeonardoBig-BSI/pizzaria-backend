@@ -18,7 +18,7 @@ app.use(fileUpload({
 }));
 app.use(router);
 
-// Acessar imagens no browser
+
 const tmpFolder = path.resolve(process.cwd(), 'tmp');
 if (!fs.existsSync(tmpFolder)) {
   fs.mkdirSync(tmpFolder);

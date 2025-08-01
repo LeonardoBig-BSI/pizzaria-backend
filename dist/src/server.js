@@ -20,7 +20,6 @@ app.use((0, express_fileupload_1.default)({
     }
 }));
 app.use(routes_1.router);
-// Acessar imagens no browser
 const tmpFolder = path_1.default.resolve(process.cwd(), 'tmp');
 if (!fs_1.default.existsSync(tmpFolder)) {
     fs_1.default.mkdirSync(tmpFolder);
