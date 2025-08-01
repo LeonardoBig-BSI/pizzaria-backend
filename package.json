@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc && xcopy src\\generated dist\\src\\generated /E /I /Y",
+    "build": "tsc && cp -r src/generated dist/src/generated",
     "start": "node dist/src/server.js",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate deploy"
