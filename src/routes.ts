@@ -28,7 +28,7 @@ const router = Router();
 const upload = multer(uploadConfig.upload("./tmp"));
 
 /* ROTAS USER */
-router.get("/", (req, res) => { return res.json({ ok: true }) })
+router.get("/health", (req, res) => { return res.json({ ok: true }) })
 router.post('/users', new CreateUserController().handle);
 router.post('/session', new AuthUserController().handle);
 router.get('/me', isAuthenticated, new DetailUserController().handle);
